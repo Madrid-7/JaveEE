@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    &lt;!&ndash; 定义bean对象:默认是用过无参构造方法生成对象，默认为单例:singleton &ndash;&gt;-->
+<!--    <bean id="duck1" class="Madrid.model.Duck">-->
+<!--        <property name="name" value="tang" />-->
+<!--        <property name="age" value="18" />-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  通过有参的构造方法定义bean对象，设置为原型:prototype  &ndash;&gt;-->
+<!--    <bean id="duck2" class="Madrid.model.Duck" scope="prototype">-->
+<!--        <constructor-arg name="name" value="lao" />-->
+<!--        <constructor-arg name="age" value="20" />-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  引用已有的bean对象：ref  &ndash;&gt;-->
+<!--    <bean id="duckShop" class="Madrid.model.DuckShop">-->
+<!--        <property name="ducks">-->
+<!--            <list>-->
+<!--                <ref bean="duck1" />-->
+<!--                <ref bean="duck2" />-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="wqerdsf" class="Madrid.model.Person">-->
+<!--        <property name="duck" ref="duck1" />-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  通过静态工厂方法实例化bean对象  &ndash;&gt;-->
+<!--    <bean id="duck3" class="Madrid.model.DuckFactory" factory-method="create" />-->
+
+<!--    &lt;!&ndash;  通过实例方法实例化bean对象  &ndash;&gt;-->
+<!--    <bean id="duckFactory" class="Madrid.model.DuckFactory" />-->
+
+<!--    <bean id="duck4" factory-bean="duckFactory" factory-method="create2" />-->
+
+    <bean id="test" class="Madrid.model.Test" init-method="init"/>
+
+</beans>
